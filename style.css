@@ -1,0 +1,78 @@
+/* style.css */
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #dff9fb; /* add light blue background color to the container */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* add rounded corners to the container */
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#iptask {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px; /* add space between input field and add task button */
+    margin-left:-10px;
+}
+
+#button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* add space below the add task button */
+}
+
+#button:hover {
+    background-color: #3e8e41;
+}
+
+#ulist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ulist li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex; /* add flexbox to align content and delete button */
+    justify-content: space-between; /* add space between content and delete button */
+    border: 1px solid #ccc; /* add border to each list item */
+    border-radius: 5px; /* add rounded corners to each list item */
+    margin-bottom: 10px; /* add space between list items */
+    background-color: #fff;
+    transition: background-color 0.3s; /* add smooth transition effect */
+}
+
+#ulist li:hover {
+    background-color: #f0f0f0; /* add light gray background color on hover */
+}
+
+#ulist li:last-child {
+    border-bottom: none;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.delete-button:hover {
+    background-color: #e91e63;
+}
