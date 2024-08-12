@@ -1,21 +1,21 @@
-const text=document.getElementById('iptask');
-const addbutton=document.getElementById('button');
-const listele=document.getElementById('ulist');
-//eventlisterners
-function buttonClick(){
-let inputTask=text.value.trim();
-if(inputTask!=""){
-    var list=document.createElement("li");
-    list.textContent=inputTask;
-    const deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete";
-    deleteButton.classList.add("delete-button");
-    list.appendChild(deleteButton);
-    deleteButton.addEventListener('click', () => {
-        list.remove();
-    });
-    listele.appendChild(list);
-    text.value="";
-
-}
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+    <h3>TODO LIST</h3>
+    <input id="iptask" placeholder="Enter your tasks"/>
+    
+    <button id="button" onclick="buttonClick()">Addtask</button>
+    <ul id="ulist"></ul>
+</div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
